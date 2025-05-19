@@ -25,30 +25,18 @@ The following example shows the container used for linting the repository:
         markdownlint --output /markdownlint.json --json --config /.markdownlint.json /docs
       target: swissgrc/azure-pipelines-markdownlint:latest
 ```
+### Included Software
+- Node.js
+- [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli)
 
 ### Tags
 
 <!-- markdownlint-disable MD013 -->
-| Tag      | Description                                                                                       | Base Image                 | Markdownlint-Cli | Size                                                                                                                                  |
-|----------|---------------------------------------------------------------------------------------------------|----------------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| latest   | Latest stable release (from `main` branch)                                                        | node:22.13.1-bookworm-slim | 0.44.0           | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-markdownlint/latest?style=flat-square)   |
-| unstable | Latest unstable release (from `develop` branch)                                                   | node:22.13.1-bookworm-slim | 0.44.0           | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-markdownlint/unstable?style=flat-square) |
-| 0.31.1   | [markdownlint-cli 0.31.1](https://github.com/igorshubovych/markdownlint-cli/releases/tag/v0.31.1) | node:18.4.0-bullseye       | 0.31.1           | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-markdownlint/0.31.1?style=flat-square)   |
-| 0.32.0   | [markdownlint-cli 0.32.0](https://github.com/igorshubovych/markdownlint-cli/releases/tag/v0.32.0) | node:18.6.0-bullseye       | 0.32.0           | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-markdownlint/0.32.0?style=flat-square)   |
-| 0.32.1   | [markdownlint-cli 0.32.1](https://github.com/igorshubovych/markdownlint-cli/releases/tag/v0.32.1) | node:18.6.0-bullseye       | 0.32.1           | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-markdownlint/0.32.1?style=flat-square)   |
-| 0.32.2   | [markdownlint-cli 0.32.2](https://github.com/igorshubovych/markdownlint-cli/releases/tag/v0.32.1) | node:18.7.0-bullseye       | 0.32.2           | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-markdownlint/0.32.2?style=flat-square)   |
-| 0.33.0   | [markdownlint-cli 0.33.0](https://github.com/igorshubovych/markdownlint-cli/releases/tag/v0.33.0) | node:18.13.0-bullseye      | 0.33.0           | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-markdownlint/0.33.0?style=flat-square)   |
-| 0.34.0   | [markdownlint-cli 0.34.0](https://github.com/igorshubovych/markdownlint-cli/releases/tag/v0.34.0) | node:20.0.0-bullseye-slim  | 0.34.0           | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-markdownlint/0.34.0?style=flat-square)   |
-| 0.35.0   | [markdownlint-cli 0.35.0](https://github.com/igorshubovych/markdownlint-cli/releases/tag/v0.35.0) | node:20.3.0-bullseye-slim  | 0.35.0           | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-markdownlint/0.35.0?style=flat-square)   |
-| 0.36.0   | [markdownlint-cli 0.36.0](https://github.com/igorshubovych/markdownlint-cli/releases/tag/v0.36.0) | node:20.5.1-bookworm-slim  | 0.36.0           | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-markdownlint/0.36.0?style=flat-square)   |
-| 0.37.0   | [markdownlint-cli 0.37.0](https://github.com/igorshubovych/markdownlint-cli/releases/tag/v0.37.0) | node:20.7.0-bookworm-slim  | 0.37.0           | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-markdownlint/0.37.0?style=flat-square)   |
-| 0.38.0   | [markdownlint-cli 0.38.0](https://github.com/igorshubovych/markdownlint-cli/releases/tag/v0.38.0) | node:20.10.0-bookworm-slim | 0.38.0           | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-markdownlint/0.38.0?style=flat-square)   |
-| 0.39.0   | [markdownlint-cli 0.39.0](https://github.com/igorshubovych/markdownlint-cli/releases/tag/v0.39.0) | node:20.11.0-bookworm-slim | 0.39.0           | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-markdownlint/0.39.0?style=flat-square)   |
-| 0.40.0   | [markdownlint-cli 0.40.0](https://github.com/igorshubovych/markdownlint-cli/releases/tag/v0.40.0) | node:20.12.2-bookworm-slim | 0.40.0           | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-markdownlint/0.40.0?style=flat-square)   |
-| 0.41.0   | [markdownlint-cli 0.41.0](https://github.com/igorshubovych/markdownlint-cli/releases/tag/v0.41.0) | node:20.13.1-bookworm-slim | 0.41.0           | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-markdownlint/0.41.0?style=flat-square)   |
-| 0.42.0   | [markdownlint-cli 0.42.0](https://github.com/igorshubovych/markdownlint-cli/releases/tag/v0.42.0) | node:20.17.0-bookworm-slim | 0.42.0           | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-markdownlint/0.42.0?style=flat-square)   |
-| 0.43.0   | [markdownlint-cli 0.43.0](https://github.com/igorshubovych/markdownlint-cli/releases/tag/v0.43.0) | node:22.11.0-bookworm-slim | 0.43.0           | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-markdownlint/0.43.0?style=flat-square)   |
-| 0.44.0   | [markdownlint-cli 0.44.0](https://github.com/igorshubovych/markdownlint-cli/releases/tag/v0.44.0) | node:22.13.1-bookworm-slim | 0.44.0           | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-markdownlint/0.44.0?style=flat-square)   |
+| Tag      | Description                                                      | Size                                                                                                                                  |
+|----------|------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| latest   | Latest stable release (from `main` branch)                       | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-markdownlint/latest?style=flat-square)   |
+| unstable | Latest unstable release (from `develop` branch)                  | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-markdownlint/unstable?style=flat-square) |
+| x.y.z    | Image for a specific version of markdownlint-cli                 |                                                                                                                                       |
 <!-- markdownlint-restore -->
 
 [markdownlint]: https://github.com/igorshubovych/markdownlint-cli
